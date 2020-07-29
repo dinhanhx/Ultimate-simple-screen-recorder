@@ -1,0 +1,8 @@
+# Ignore sys's files
+*.pyc
+*venv
+*.bat
+
+# Ignore dev's files
+*plan.md
+*dev_settings.json
