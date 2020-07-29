@@ -67,7 +67,7 @@ if len(sys.argv) >= 2:
             if sys.argv[2] == "-i": # ussr -s -i
                 print_current_settings()
 
-        if sys.argv[1] == "-r": # ussr -r 
+        if sys.argv[1] == "-r": # ussr -r
             pass
 
         else:
