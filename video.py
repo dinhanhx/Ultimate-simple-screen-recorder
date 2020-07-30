@@ -36,7 +36,7 @@ def make_video():
 
     while True:
         vobj.write(grab_to_opencv())
-        if is_pressed("alt+q"):
+        if is_pressed(settings["stop key"]):
             break
 
     vobj.release()
