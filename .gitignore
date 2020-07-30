@@ -1,16 +1,13 @@
-# Ignore sys's files
+# Ignore sys's files and folders
 *.pyc
-*venv
+venv
 *.bat
 *.png
 *.avi
 *.spec
-*build
-*dist
+build
+dist
 
-# Ignore dev's files
+# Ignore dev's files and folders
 *plan.md
-*dev_settings.json
-*dev_video.py
-*dev_audio.py
-*dev_draft.py
+dev
