@@ -70,5 +70,5 @@ if len(sys.argv) >= 2:
         if sys.argv[1] == "-r": # ussr -r
             pass
 
-        else:
-            print_help()
+    else:
+        print_help()
