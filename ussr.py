@@ -1,6 +1,8 @@
 import os
 import sys
 import json
+from video import make_video
+from audio import make_audio
 from setting import setup_settings, print_current_settings
 from colorama import init, Fore
 init(autoreset=True)
@@ -50,7 +52,7 @@ if len(sys.argv) >= 2:
                 print_current_settings()
 
         if sys.argv[1] == "-r": # ussr -r
-            pass
+            make_video()
 
     else:
         print_help()
