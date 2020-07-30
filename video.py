@@ -1,7 +1,6 @@
 import os
 import json
 
-from platform import system
 from screeninfo import get_monitors
 from numpy import array
 from cv2 import cvtColor, COLOR_BGR2RGB, VideoWriter_fourcc, VideoWriter
@@ -12,6 +11,7 @@ from setting import load_settings
 from colorama import init, Fore
 init(autoreset=True)
 
+from platform import system
 if system() == "Windows":
     from PIL.ImageGrab import grab
 else:
@@ -31,9 +31,9 @@ def make_video():
     if not os.path.exists(settings["output folder"]):
         os.mkdir(settings["output folder"])
 
-    fname_path = settings["output folder"] + "/" + name_video(settings["date format"]) + ".avi"
+    fname_path = settings["output folder"] + "/" + name_video(settings["date format"]) + settings["tail"]
     print(Fore.GREEN+fname_path)
-    
+
     vobj = VideoWriter(fname_path, VideoWriter_fourcc(*settings["fourcc"]),
                             float(settings["fps"]), get_primary_monitor())
 

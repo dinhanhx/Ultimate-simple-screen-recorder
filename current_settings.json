@@ -1,1 +1,1 @@
-{"fps": 24, "mic": true, "speaker": true, "output folder": "ussr_vid", "stop key": "alt+q","date format": "%d_%m_%Y_%H_%M_%S", "fourcc": "XVID"}
+{"fps": 24, "mic": true, "speaker": true, "output folder": "ussr_vid", "stop key": "alt+q","date format": "%d_%m_%Y_%H_%M_%S", "tail": ".avi","fourcc": "XVID"}
