@@ -1,1 +1,1 @@
-{"fps": 30, "mic": true, "speaker": true, "output folder": "ussr_vid", "date format": "%d/%m/%Y %H:%M:%S", "fourcc": "XVID"}
+{"fps": 30, "mic": true, "speaker": true, "output folder": "ussr_vid", "date format": "%d_%m_%Y_%H_%M_%S", "fourcc": "XVID"}
