@@ -43,6 +43,9 @@ if len(sys.argv) >= 2:
     if sys.argv[1] == "/?": # ussr /?
         print_windows_help()
 
+    if sys.argv[1] == "-r": # ussr -r
+        make_video()
+
     if len(sys.argv) >= 3:
         if sys.argv[1] == "-s":
             if sys.argv[2].split(".")[-1] == "json": # ussr -s settings.json
@@ -50,9 +53,3 @@ if len(sys.argv) >= 2:
 
             if sys.argv[2] == "-i": # ussr -s -i
                 print_current_settings()
-
-        if sys.argv[1] == "-r": # ussr -r
-            make_video()
-
-    else:
-        print_help()

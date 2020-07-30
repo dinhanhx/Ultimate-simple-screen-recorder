@@ -9,6 +9,8 @@ from datetime import datetime
 from math import floor
 from keyboard import is_pressed
 from setting import load_settings
+from colorama import init, Fore
+init(autoreset=True)
 
 def get_primary_monitor():
     return (get_monitors()[0].width, get_monitors()[0].height)
@@ -25,7 +27,7 @@ def make_video():
         os.mkdir(settings["output folder"])
 
     fname_path = settings["output folder"] + "/" + name_video(settings["date format"]) + ".avi"
-    print(fname_path)
+    print(Fore.GREEN+fname_path)
     vobj = VideoWriter(fname_path, VideoWriter_fourcc(*settings["fourcc"]),
                             float(settings["fps"]), get_primary_monitor())
 
