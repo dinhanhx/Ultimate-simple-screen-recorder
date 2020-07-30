@@ -35,7 +35,7 @@ def make_video():
     vobj = VideoWriter(fname_path, VideoWriter_fourcc(*settings["fourcc"]),
                             float(settings["fps"]), get_primary_monitor())
 
-    print(Fore.GREEN+fname_path+Fore.White+" is recording...")
+    print(Fore.GREEN+fname_path+Fore.WHITE+" is recording...")
     while True:
         vobj.write(grab_to_opencv(monitor))
         if is_pressed(settings["stop key"]):
