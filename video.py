@@ -8,12 +8,7 @@ from cv2 import cvtColor, COLOR_BGR2RGB, VideoWriter_fourcc, VideoWriter
 from datetime import datetime
 from math import floor
 from keyboard import is_pressed
-
-def load_settings():
-    fobj_r = open("current_settings.json", "r")
-    settings = json.load(fobj_r)
-    fobj_r.close()
-    return settings
+from setting import load_settings
 
 def get_primary_monitor():
     return (get_monitors()[0].width, get_monitors()[0].height)
