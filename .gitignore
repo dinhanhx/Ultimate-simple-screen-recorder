@@ -3,6 +3,7 @@
 *venv
 *.bat
 *.png
+*.avi
 
 # Ignore dev's files
 *plan.md
