@@ -39,6 +39,7 @@ def make_video():
     while True:
         vobj.write(grab_to_opencv(monitor))
         if is_pressed(settings["stop key"]):
+            print(Fore.GREEN+fname_path+Fore.WHITE+" is releasing...")
             break
 
     vobj.release()
