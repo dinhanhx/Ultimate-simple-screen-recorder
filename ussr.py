@@ -45,6 +45,11 @@ if len(sys.argv) >= 2:
 
     if sys.argv[1] == "-r": # ussr -r
         make_video()
+        # Note for people who can/ want to try record audio from speaker and mic
+        # Put make_video() and  into a process
+        # Put make_audio() and  into another process
+        # By using module multiprocess # pip install multiprocess
+        # Not built-in multiprocessing
 
     if len(sys.argv) >= 3:
         if sys.argv[1] == "-s":
