@@ -1,15 +1,7 @@
-from setting import load_settings
-
-def make_mic(cps, stop_key):
-    pass
-
-def make_speaker(cps, stop_key):
-    pass
-
 def make_audio():
-    setting = load_settings()
-    if setting["mic"]:
-        make_mic(setting["fs"], setting["stop key"])
-
-    if setting["speaker"]:
-        make_speaker(setting["fs"], setting["stop key"])
+    # Note for people who can/ want to try record audio from speaker and mic
+    # Put make_mic() and  into a process
+    # Put make_speaker() and  into another process
+    # By using module multiprocess # pip install multiprocess
+    # Not built-in multiprocessing
+    return None
