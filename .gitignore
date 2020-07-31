@@ -7,7 +7,3 @@ venv
 *.spec
 build
 dist
-
-# Ignore dev's files and folders
-*plan.md
-dev
