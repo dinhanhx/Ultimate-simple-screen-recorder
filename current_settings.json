@@ -1,1 +1,1 @@
-{"fps": 24, "fs": 44100, "output folder": "ussr_vid", "stop key": "alt+q","date format": "%d_%m_%Y_%H_%M_%S", "tail": ".avi","fourcc": "XVID"}
+{"fps": 24, "output folder": "ussr_vid", "stop key": "alt+q","date format": "%d_%m_%Y_%H_%M_%S", "tail": ".avi","fourcc": "XVID"}
