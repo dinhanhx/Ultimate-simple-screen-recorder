@@ -79,14 +79,16 @@ To load/setup your settings.
 
 Just read `currrent_settings.json` and if you make a copy of the following json block of code, please remove all "comments"
 
-```json
+(Yes I use Python to present json with comments)
+
+```Python
 {
-   "fps": 24, // fps of the video
-   "output folder": "ussr_vid", // should be full path if change
-   "stop key": "alt+q", // must know about Python module keyboard
-   "date format": "%d_%m_%Y_%H_%M_%S", // must know about Python module datetime
-   "tail": ".avi", // must know about Python module opencv
-   "fourcc": "XVID" // must know about Python module opencv
+   "fps": 24, # fps of the video
+   "output folder": "ussr_vid", # should be full path if change
+   "stop key": "alt+q", # must know about Python module keyboard
+   "date format": "%d_%m_%Y_%H_%M_%S", # must know about Python module datetime
+   "tail": ".avi", # must know about Python module opencv
+   "fourcc": "XVID" # must know about Python module opencv
 }
 ```
 
